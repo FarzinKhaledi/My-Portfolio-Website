@@ -1,14 +1,14 @@
-import './index.scss'
-import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './index.scss';
+import { useState } from 'react';
+import LogoS from '../../assets/images/logo-s.png';
+import LogoSubtitle from '../../assets/images/logo_sub.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLinkedin,
   faGithub,
   faYoutube,
   faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
 import {
   faHome,
   faUser,
@@ -16,17 +16,17 @@ import {
   faSuitcase,
   faBars,
   faClose,
-} from '@fortawesome/free-solid-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
+} from '@fortawesome/free-solid-svg-icons';
+import { Link, NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false)
+  const [showNav, setShowNav] = useState(false);
 
   return (
     <div className="nav-bar">
       <Link className="logo" to="/" onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img className="sub-logo" src={LogoSubtitle} alt="Faz2tech-Logo" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
@@ -131,7 +131,7 @@ const Sidebar = () => {
         className="hamburger-icon"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

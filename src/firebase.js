@@ -4,15 +4,14 @@ import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAPkv_qVzaLaPoQ38Yj4SGvr9qUgLHHgFA',
-  authDomain: 'my-portfolio-cd40b.firebaseapp.com',
-  projectId: 'my-portfolio-cd40b',
-  storageBucket: 'my-portfolio-cd40b.appspot.com',
-  messagingSenderId: '261778363149',
-  appId: '1:261778363149:web:7ab4ccdab73800638f1644',
-  measurementId: 'G-YXQNW0VE5R',
+  apiKey: 'AIzaSyDjJAuIR4SXYp90IcIP0BeDKZwLAzJirKg',
+  authDomain: 'my-website-5cd3e.firebaseapp.com',
+  projectId: 'my-website-5cd3e',
+  storageBucket: 'my-website-5cd3e.appspot.com',
+  messagingSenderId: '493637542163',
+  appId: '1:493637542163:web:55534fe544fcb4167b3ae6',
+  measurementId: 'G-SBYQ2R7L06',
 };
-
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth();
 const provider = new GoogleAuthProvider();
