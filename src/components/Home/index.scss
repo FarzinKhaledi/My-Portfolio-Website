@@ -1,4 +1,5 @@
 .home-page {
+  height: fit-content;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -86,17 +87,20 @@
   .home-page h1:before,
   .home-page h1:after {
     display: none;
+    height:fit-content;
   }
 
   .home-page .text-zone {
     position: initial;
-    width: 82%;
+    width: 100%;
     transform: none;
-    padding: 5%;
     box-sizing: border-box;
-    font-size: small;
+    font-size: smaller;
     text-align: left;
     justify-content: left;
+    padding-top: 20px ;
+    padding-bottom: 20PX;
+    height: auto;
   }
 
   .home-page .flat-button {
@@ -104,7 +108,6 @@
     display: block;
     margin: 40px auto 0 auto;
     width: 125px;
-  
   }
 
   .logo-container {

@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 3%;
+  width: 80px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -33,9 +33,11 @@
     top: 50%;
     margin-top: -120px;
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
 
     a {
-      font-size: 27px;
+      font-size: 20px;
       color: #4d4d4e;
       display: block;
       line-height: 51px;
@@ -61,7 +63,7 @@
 
       &:after {
         content: '';
-        font-size: 12px;
+        font-size: 10px;
         letter-spacing: 2px;
         position: absolute;
         bottom: 0;
@@ -155,7 +157,7 @@
       width: 100%;
       bottom: 0;
       background: #181818;
-      height: 5%;
+      height: 70px;
       padding: 10px;
       z-index: 2;
       position: fixed;
