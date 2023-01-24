@@ -104,7 +104,7 @@ const Contact = () => {
           Wandsworth
           <br />
           <br />
-          <span>Farzin2tech@gmail.com</span>
+          <span>Info@faz2tech.com</span>
         </div>
         <div className="map-wrap">
           <MapContainer center={[51.460086, -0.1890013]} zoom={15}>
