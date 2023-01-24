@@ -6,7 +6,6 @@ import LogoTitle from '../../assets/images/logo-s.png';
 import Logo from './Logo';
 import './index.scss';
 
-console.log(Logo);
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -24,11 +23,11 @@ const Home = () => {
     'c',
     'k',
     ' ',
-    'w',
-    'e',
-    'b',
+   
   ];
-  const jobArray2 = ['d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
+  const jobArray2 = [ 'w',
+  'e',
+  'b',' ','d', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r'];
 
   useEffect(() => {
     return setTimeout(() => {

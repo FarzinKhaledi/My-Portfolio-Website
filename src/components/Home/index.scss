@@ -10,17 +10,18 @@
 
   h1 {
     color: #fff;
-    font-size: 56px;
-    line-height: 53px;
+    font-size: 60px;
+    line-height: 60px;
     margin: 0;
-    font-family: 'Coolvetica';
-    font-weight: 400;
+    font-family: 'semibold';
+    font-weight: 500;
+    padding-left: 10px;
 
     &:before {
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
-      font-size: 18px;
+      font-size: 20px;
       position: absolute;
       margin-top: -40px;
       left: -15px;
@@ -31,9 +32,9 @@
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
-      font-size: 18px;
+      font-size: 20px;
       position: absolute;
-      margin-top: 18px;
+      margin-top: 22px;
       margin-left: 20px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
@@ -53,7 +54,7 @@
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 2rem;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -95,33 +96,24 @@
     box-sizing: border-box;
     font-size: small;
     text-align: left;
-    justify-content:left;
+    justify-content: left;
   }
 
   .home-page .flat-button {
     float: none;
     display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
+    margin: 40px auto 0 auto;
+    width: 125px;
+  
   }
 
   .logo-container {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: auto;
-    top: 50px;
     right: 0;
     box-sizing: border-box;
     margin: auto;
     left: 0;
-  }
-
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
   }
 }

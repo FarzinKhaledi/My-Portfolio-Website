@@ -21,7 +21,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_6nlo04k',
+        'service_dqgj483',
         'template_r5mw38l',
         form.current,
         'juUeoPV7JCdUsWoZ-'
@@ -54,7 +54,7 @@ const Contact = () => {
             questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail} >
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input
