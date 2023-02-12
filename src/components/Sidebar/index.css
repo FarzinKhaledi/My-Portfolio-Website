@@ -1,6 +1,6 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
+  width: 80px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -14,11 +14,13 @@
 .nav-bar .logo img {
   display: block;
   margin: 8px auto;
-  width: 24px;
+  width: 27px;
   height: auto;
+  margin-left: 25px;
 }
 .nav-bar .logo img.sub-logo {
-  width: 50px;
+  width: 70px;
+  margin-left: 3px;
 }
 .nav-bar nav {
   display: block;
@@ -28,9 +30,11 @@
   top: 50%;
   margin-top: -120px;
   width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .nav-bar nav a {
-  font-size: 22px;
+  font-size: 20px;
   color: #4d4d4e;
   display: block;
   line-height: 51px;
@@ -52,7 +56,7 @@
 }
 .nav-bar nav a:after {
   content: "";
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 2px;
   position: absolute;
   bottom: 0;
@@ -90,7 +94,7 @@
 .nav-bar ul li a {
   padding: 7px 0;
   display: block;
-  font-size: 20px;
+  font-size: 27px;
   line-height: 16px;
   color: #4d4d4e;
 }
@@ -98,7 +102,8 @@
   color: #ffd700;
 }
 
-.hamburger-icon, .close-icon {
+.hamburger-icon,
+.close-icon {
   display: none;
 }
 
@@ -109,7 +114,23 @@
     height: auto;
     min-height: 90%;
   }
-  .nav-bar ul, .nav-bar nav {
+  .nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nav-bar ul {
+    width: 100%;
+    bottom: 0;
+    background: #181818;
+    height: 70px;
+    padding: 10px;
+    z-index: 2;
+    position: fixed;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .nav-bar nav {
     display: none;
   }
   .nav-bar nav {
@@ -117,13 +138,15 @@
     top: 0;
     left: 0;
     background: #181818;
-    height: 100%;
+    height: 75px;
     margin: 0;
     z-index: 2;
     position: fixed;
   }
   .nav-bar nav.mobile-show {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
   }
   .nav-bar nav a {
     display: flex;
@@ -134,13 +157,13 @@
     opacity: 1;
     position: initial;
     width: auto;
-    margin-left: 10PX;
+    margin-left: 10px;
   }
   .nav-bar nav a svg {
     opacity: 1 !important;
   }
   .nav-bar .hamburger-icon,
-.nav-bar .close-icon {
+  .nav-bar .close-icon {
     position: absolute;
     top: 15px;
     right: 15px;
