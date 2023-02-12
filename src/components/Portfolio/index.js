@@ -3,7 +3,7 @@ import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
 import { onSnapshot, collection } from 'firebase/firestore';
-import db from '../../firebase'
+import db from '../../firebase';
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -30,7 +30,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const getPortfolio = onSnapshot(
-      collection(db, 'Projects'),
+      collection(db, 'projects'),
       (snapShot) => {
         setPortfolio(snapShot.docs.map((doc) => doc.data()));
       },
@@ -41,9 +41,8 @@ const Portfolio = () => {
     return () => {
       getPortfolio();
     };
-  }, []);
+  }, [portfolio]);
 
-  console.log(portfolio);
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
@@ -59,6 +58,12 @@ const Portfolio = () => {
                 <p className="title">{port.name}</p>
                 <h4 className="description">{port.description}</h4>
                 <button className="btn" onClick={() => window.open(port.url)}>
+                  View Code
+                </button>
+                <button
+                  className="btn"
+                  onClick={() => window.open(port.deploy)}
+                >
                   View
                 </button>
               </div>
